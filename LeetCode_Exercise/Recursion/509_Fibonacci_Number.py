@@ -1,4 +1,4 @@
-n = 2
+n = 7
 
 #Normal
 def fib1(n):
@@ -10,21 +10,16 @@ def fib1(n):
     return sum(x[-2:])
 
 
-#Recursion
+#Recursion - bottom to top
 def fib2(n):
     if (n == 0):
         return 0
-
     def rec(x, y, z):
         if (z == n):
             return y
-        a = y
-        y = x + y
-        x = a
-        z += 1
-        return rec(x, y, z)
-
+        return rec(y, x+y, z+1)
     return rec(0, 1, 1)
+
 
 print(fib1(n))
 print(fib2(n))
