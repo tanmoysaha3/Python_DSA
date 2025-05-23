@@ -1,0 +1,18 @@
+def backT(...)
+{
+    #Base Case
+    if(solved)
+    {
+        return
+    }
+
+    for choice in choices
+    {
+        if(isValid choice)
+        {
+            choose
+            backT(...)
+            revert choice                #Backtracking
+        }
+    }
+}

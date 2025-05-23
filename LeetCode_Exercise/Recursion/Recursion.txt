@@ -1,0 +1,12 @@
+def rec(...)
+{
+    #Base Case
+    if(.....)
+    {
+        return 0/1/etc
+    }
+
+    Do other calculations
+    #Recursive Case
+    return rec(...)
+}

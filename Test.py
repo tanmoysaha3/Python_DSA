@@ -1,9 +1,21 @@
 #Fibinacci
-def fib(n):
-    def rec(x,y,z):
-        if(z==n):
-            return y
-        return rec(y,x+y,z+1)
-    return rec(0,1,1)
+import math
+def fib(n,k):
+    x=[]
+    for i in range(n):
+        x.append(i+1)
+    print(x)
+    y=set(x)
+    j=0
+    m=""
+    while(k>0):
+        a=k//len(y)
+        m+=str(x[a])
+        del x[a]
+        print(a,m)
+        k-=a+1
+    for i in x:
+        m+=str(i)
+    return m
 
-print(fib(0))
+print(fib(4,9))
