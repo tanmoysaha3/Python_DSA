@@ -1,7 +1,4 @@
 # Recursion
-from xml.etree.ElementInclude import include
-
-
 def knapsack1(w,val,wt):
     x=[0]
     def rec(index, sw, total):
